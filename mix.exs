@@ -77,7 +77,11 @@ defmodule NervesGrisp.MixProject do
       {:nerves_system_rpi3, "~> 2.0", runtime: false, targets: :rpi3},
       {:nerves_system_rpi4, "~> 2.0", runtime: false, targets: :rpi4},
       {:nerves_system_rpi5, "~> 2.0", runtime: false, targets: :rpi5},
-      {:nerves_system_x86_64, "~> 1.24", runtime: false, targets: :x86_64}
+      {:nerves_system_x86_64, "~> 1.24", runtime: false, targets: :x86_64},
+
+      # Elisnake dependencies
+      {:gproc, "~> 0.9.0"},
+      {:plug_cowboy, "~> 2.0"}
     ]
   end
 

@@ -18,3 +18,6 @@ erl_crash.dump
 
 # Image file
 /*.img
+
+# Configuration overrides
+/config/grisp2.override.exs

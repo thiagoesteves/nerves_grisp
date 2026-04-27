@@ -100,3 +100,10 @@ config :mdns_lite,
 # Uncomment to use target specific configurations
 
 # import_config "#{Mix.target()}.exs"
+
+# File used for configuration overrides and individual secrets.
+override_file = "grisp2.override.exs"
+
+if File.exists?("config/#{override_file}") do
+  import_config override_file
+end

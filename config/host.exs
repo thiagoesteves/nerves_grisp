@@ -19,3 +19,10 @@ config :nerves_runtime,
        "a.nerves_fw_platform" => "host",
        "a.nerves_fw_version" => "0.0.0"
      }}
+
+# File used for configuration overrides and individual secrets.
+override_file = "host.override.exs"
+
+if File.exists?("config/#{override_file}") do
+  import_config override_file
+end

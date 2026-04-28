@@ -29,7 +29,9 @@ defmodule NervesGrisp.Application do
         #
         # Starts a worker by calling: Host.Worker.start_link(arg)
         # {Host.Worker, arg},
-      ] ++ Elisnake.Application.children()
+      ]
+
+      # ++ Elisnake.Application.children()
     end
   else
     defp target_children() do
@@ -37,7 +39,9 @@ defmodule NervesGrisp.Application do
         # Children for all targets except host
         # Starts a worker by calling: Target.Worker.start_link(arg)
         # {Target.Worker, arg},
-      ] ++ Elisnake.Application.children()
+      ]
+
+      # ++ Elisnake.Application.children()
     end
   end
 end

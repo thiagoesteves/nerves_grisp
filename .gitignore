@@ -21,3 +21,7 @@ erl_crash.dump
 
 # Configuration overrides
 /config/grisp2.override.exs
+/config/host.override.exs
+
+# Ignore certificates
+/rootfs_overlay/etc/*.pem

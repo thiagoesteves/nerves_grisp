@@ -81,7 +81,11 @@ defmodule NervesGrisp.MixProject do
 
       # Elisnake dependencies
       {:gproc, "~> 0.9.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+
+      # Nerves HUB Link
+      {:nerves_hub_link, "~> 2.2"},
+      {:castore, "~> 1.0"}
     ]
   end
 
